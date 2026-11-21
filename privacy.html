@@ -24,6 +24,7 @@ nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px;font-size:15px}
 <ul>
 <li>Birthdays you add: name, date, optional photo, and the "About" details you enter (relationship, interests, style, budget, notes).</li>
 <li>Your settings: theme and colours, which reminders you want, and birthday effects.</li>
+<li>Your AI gift chats, so you can continue them later. You can delete a chat anytime with "Start over".</li>
 </ul>
 <p>We never see this information. Reminders are scheduled on your phone; no server is involved.</p>
 <h2>2. What we store when you create an account</h2>
@@ -35,6 +36,7 @@ nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px;font-size:15px}
 <li><strong>Wishlist:</strong> the items you add (name, optional link and price), and gifts you secretly reserve on friends' wishlists.</li>
 <li><strong>Invites:</strong> if you joined with a friend's invite code, we record who invited you, so they can see their progress toward invite rewards (they see only your name, @username and photo).</li>
 <li><strong>AI usage count:</strong> when you use the AI gift assistant, we record the time of each request (not its content) to apply the daily limit. These records are deleted after 2 days.</li>
+<li><strong>Extra AI messages:</strong> if you buy extra messages, we count how many of them you've used.</li>
 </ul>
 <p><strong>Who can see it:</strong></p>
 <ul>
@@ -43,14 +45,15 @@ nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px;font-size:15px}
 <li>Wishlist owners can never see who reserved their items.</li>
 </ul>
 <h2>3. AI gift ideas</h2>
-<p>The AI gift assistant is included in the paid subscription. When you use it, the app sends the details you entered about that person (for example: relationship, interests, style, budget, notes, days until their birthday, and their unreserved wishlist items) and your chat messages to <strong>Google's Gemini AI</strong> to generate suggestions. We don't store your chats; each chat starts fresh. Please don't type sensitive personal information into the chat.</p>
+<p>The AI gift assistant is included in the paid subscription. When you use it, the app sends the details you entered about that person (for example: relationship, interests, style, budget, notes, days until their birthday, and their unreserved wishlist items) and your chat messages to <strong>Google's Gemini AI</strong> to generate suggestions. We don't store your chats on our servers; they're saved only on your phone. Please don't type sensitive personal information into the chat.</p>
 <h2>4. Who processes data for us</h2>
 <ul>
 <li><strong>Supabase:</strong> hosts our database, login and server functions.</li>
 <li><strong>Google (Gemini API):</strong> generates AI gift ideas.</li>
 <li><strong>Google / Apple:</strong> only if you choose "Continue with Google" or "Sign in with Apple".</li>
 <li><strong>Apple App Store / Google Play:</strong> handle payments. We never see your card details.</li>
-<li><strong>RevenueCat:</strong> tells the app whether your subscription is active. It receives a purchase ID linked to your account, never your card details.</li>
+<li><strong>RevenueCat:</strong> tells the app whether your subscription is active and which extra message packs you bought. It receives a purchase ID linked to your account, never your card details.</li>
+<li><strong>Brevo:</strong> sends our account emails (like your sign-up confirmation and password reset codes). It receives your email address only to deliver them.</li>
 <li><strong>Sentry:</strong> receives crash reports when the app breaks, so we can fix it. A report contains the error, your phone model and system version, and which screen it happened on. It never includes your name, email, birthdays or anything you typed. Data is stored in the EU.</li>
 <li><strong>Cloudflare Turnstile:</strong> a quick automatic check during sign-up and sign-in that you're a real person, not a bot.</li>
 </ul>
